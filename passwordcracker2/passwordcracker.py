@@ -81,14 +81,19 @@ def quit_app():
     input("Press Enter to exit...")
     quit()
 
-choice = input("Welcome to Password Cracker!\n\n1) Crack password\n2) Read Log\n3) Clear Log\n4) Exit\n\nChoice: ")
-if choice == "1":
-    crack_password()
-elif choice == "2":
-    read_log()
-elif choice == "3":
-    clear_log()
-elif choice == "4":
-    quit()
-else:
-    raise ValueError("Invalid choice!")
+def main():
+    choice = input("Welcome to Password Cracker!\n\n1) Crack password\n2) Read Log\n3) Clear Log\n4) Exit\n\nChoice: ")
+    if choice == "1":
+        crack_password()
+    elif choice == "2":
+        read_log()
+    elif choice == "3":
+        clear_log()
+    elif choice == "4":
+        quit()
+    else:
+        raise ValueError("Invalid choice!")
+
+
+if __name__ == "__main__":
+    main()
