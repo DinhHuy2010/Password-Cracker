@@ -1,0 +1,10 @@
+20/02/2022 22:17:11
+
+Your password: test
+Time: 8 seconds
+Guessed attempts: 73 times guess
+20/02/2022 22:25:29
+
+Your password: Hello World!
+Time: 50 seconds
+Guessed attempts: 426 times guess

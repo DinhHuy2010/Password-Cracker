@@ -1,1 +1,1 @@
-pyautogui (pip install pyautogui)
+getpass (pip install getpass)

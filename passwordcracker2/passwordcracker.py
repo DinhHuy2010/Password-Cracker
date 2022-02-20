@@ -1,5 +1,5 @@
 import string, random
-import pyautogui
+import getpass
 import time
 import os
 from datetime import datetime
@@ -14,7 +14,9 @@ def crack_password():
     list_chars = list(string.printable)
     clue = []
     password_guess = ""
-    password_input = pyautogui.password("Enter password: ")
+    password_input = getpass.getpass("Enter password: ")
+    if password_input is None:
+        quit_app()
     start_time = time.time()
     for a in password_input:
         clue.append("?")
